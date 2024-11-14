@@ -1,0 +1,134 @@
+del {
+  text-decoration: line-through;
+  -webkit-text-decoration-color: red;
+  -moz-text-decoration-color: red;
+  text-decoration-color: red;
+  vertical-align: middle;
+}
+
+.task {
+  margin: 10px;
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--prim-container-on-90);
+  /* overflow-x: hidden; */
+}
+.textTask {
+  font-family: var(--manrope-r);
+  font-size: 2.1rem;
+  color: var(--primary-80);
+  overflow-x: scroll;
+}
+
+.controlWrapper {
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: auto;
+}
+.controlLabel {
+  padding: 10px;
+}
+
+.markDone::before {
+  content: url('../../images/icons/shape.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+input[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+}
+
+input[type='checkbox']:checked {
+  accent-color: var(--primary-80);
+}
+
+.btn {
+  margin: 5px;
+  padding: 2px;
+  width: 32px;
+  height: 32px;
+  background: var(--primary-80);
+  /* background-color: transparent; */
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.btn img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.btn:hover {
+  background: var(--primary-80);
+}
+.btn:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  background: var(--prim-container-30);
+}
+
+@media (max-width: 1440px) {
+  .textTask {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .textTask {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .textTask {
+    font-size: 1.1rem;
+  }
+}

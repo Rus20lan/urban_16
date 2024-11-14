@@ -1,0 +1,29 @@
+.container {
+  max-width: 1920px;
+  height: 100px;
+  width: 87%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.headerH1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin: 0;
+  font-family: var(--manrope-sb);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--prim-container-on-90);
+}

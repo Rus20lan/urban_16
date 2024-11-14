@@ -1,0 +1,97 @@
+.container {
+  max-width: 1920px;
+  margin: 0px auto 20px auto;
+  border-radius: 16px;
+  width: 80%;
+  height: 100px;
+  background: var(--grey-wrap);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.formWrapper {
+  width: 80%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.formInput {
+  border-radius: 4px 4px 0 0;
+  border: none;
+  width: 90%;
+  height: 56px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: inherit;
+  font-family: var(--manrope-r);
+  font-size: 2.1rem;
+  color: var(--primary-80);
+  border-bottom: 1px solid var(--prim-container-on-90);
+}
+.formBtn {
+  border: none;
+  border-radius: 8px;
+  width: 75px;
+  height: 52px;
+  background: var(--primary-80);
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-family: var(--manrope-r);
+  font-size: 2.1rem;
+  color: var(--dark-background);
+  text-transform: uppercase;
+}
+.formBtn:hover {
+  background: var(--primary-80);
+}
+.formBtn:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  background: var(--prim-container-30);
+}
+
+.formInput:focus {
+  outline: none;
+}
+
+@media (max-width: 1920px) {
+  .formWrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .formWrapper {
+    width: 90%;
+    gap: 30px;
+  }
+  .formInput {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .formWrapper {
+    gap: 20px;
+  }
+  .formInput {
+    font-size: 1.5rem;
+  }
+}

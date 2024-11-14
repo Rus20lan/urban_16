@@ -1,0 +1,86 @@
+.container {
+  /* max-width: 1920px; */
+  width: 30%;
+  margin: 0px auto;
+  /* margin: 20px auto; */
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  border-radius: 16px;
+  /* width: 80%; */
+  height: 100%;
+  border: 1px solid var(--prim-container-on-90);
+  /* background: var(--grey-wrap); */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radioWrapper {
+  height: auto;
+  margin: 10px auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.radioBlock {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 30%;
+}
+.radioBlock label {
+  font-family: var(--manrope-sb);
+  color: var(--primary-80);
+  width: auto;
+  cursor: pointer;
+}
+
+.radioBlock input {
+  margin-right: 5px;
+}
+
+.nameFilter {
+  margin: 0;
+  width: auto;
+  border-bottom: 1px solid var(--prim-container-on-90);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: var(--manrope-sb);
+  font-size: 2.1rem;
+  color: var(--prim-container-on-90);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    /* width: ; */
+    width: 90%;
+    height: 150px;
+  }
+}
